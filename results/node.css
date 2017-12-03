@@ -87,4 +87,6 @@ img{
             height: 10%;
             align-self: center;
 
+}.typed_wrap{
+    opacity: 0.5;
 }
