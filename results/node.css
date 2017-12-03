@@ -39,7 +39,7 @@ td {
 }
 .contain {
     background: white;
- padding-bottom: 5%;
+ padding-bottom: 2%;
   
   
 }
@@ -48,7 +48,7 @@ td {
     position: absolute;
     margin-left: 20px;
     margin-top: 20px;
-    padding: 10px;
+
     border: white 2px solid;
     transition: all .5s ease;
 
@@ -63,11 +63,11 @@ a {
 
 }
 a:hover {
-    : #34495e;
+
 }
 .footer{
-    transform: translateY(5%);
-height: 100%;
+    transform: translateY(0%);
+
     width: 100vw;
     background-color: #293d53;
     padding-top: 2%;
@@ -82,7 +82,7 @@ height: 100%;
     opacity: 1;
 }
 img{
-    padding-top: 2%;
+    padding-top: 1%;
 
             height: 10%;
             align-self: center;
