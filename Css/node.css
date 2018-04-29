@@ -1,0 +1,327 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Abel;
+    font-family: "Abel";
+    overflow-x: hidden;
+}
+* {
+    transition: all ease 0.4s;
+}
+.alpha {
+    position: absolute;
+    margin-top: 60vh;
+    margin-left: 80vh;
+}
+.landing {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1000;
+    margin: 0;
+    padding: 0;
+    background: #003366;
+    background: url('bg.jpg');
+    background-attachment: scroll;
+    background-position: 0 0;
+    animation: animate 30s linear infinite forwards;
+}
+#vid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+@keyframes animate {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 100%
+    }
+}
+.overlay {
+    background-image: linear-gradient(to bottom right rgb(0, 51, 120), rgb(0, 51, 120));
+    z-index: 1000;
+}
+.text {
+    position: absolute;
+}
+.group {
+    align-content: center;
+    font-size: 100px;
+}
+#exc {
+    margin-left: 575px;
+    position: relative;
+}
+.first {
+    display: block;
+    padding: 10px;
+    height: 500px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.3);
+    background: url('nodelogotrimmed.png');
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 10%;
+    background-attachment: scroll;
+}
+.second {
+    height: auto;
+    padding: 20px;
+    background: #003366;
+    padding-bottom: 5%;
+}
+.white {
+    color: white;
+    font-size: 50px;
+}
+.badge {
+    display: inline-block;
+    margin: 10px;
+    height: 220px;
+    color: white;
+    width: 220px;
+    background: rgba(0,0,0,0.3);
+    line-height: 23px;
+    border-bottom: #8cc63f 4px solid;
+    font-size: 22px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.3);
+}
+.wow {
+    margin-top: 15%;
+}
+.nig {
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    background: black;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    margin-top: 15%;
+    transform: scale(1.2);
+}
+#zero {
+    background: url('nig1.png');
+    background-size: contain;
+    background-position: center;
+}
+#one {
+    background: url('nig2.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 140%;
+}
+#two {
+    background: black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 140%;
+}
+#three {
+    background: black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 140%;
+}
+#four {
+    background: url('nig4.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 110%;
+}
+#five {
+    background: url('nig5.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#six {
+    background: url('nig6.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#seven {
+    background: url('nig3.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 115%;
+}
+#eight {
+    background: url('nig7.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#nine {
+    background: url('nig8.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#ten {
+    background: url('nig9.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 105%;
+}
+.badge:hover {
+    filter: none;
+}
+.badge1 {
+    display: inline-block;
+    margin: 10px;
+    height: 220px;
+    width: 220px;
+    color: white;
+    background: rgba(0,0,0,0.3);
+    border-bottom: #8cc63f 4px solid;
+    line-height: 23px;
+    font-size: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.3);
+}
+span {
+    color: goldenrod;
+}
+.badge2 {
+    display: inline-block;
+    margin: 10px;
+    height: 220px;
+    width: 220px;
+    color: white;
+    background: rgba(0,0,0,0.3);
+    border-bottom: white 3px solid;
+    line-height: 23px;
+    font-size: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.3);
+}
+#yellow {
+    border-bottom: goldenrod 3px solid;
+}
+.line {
+    width: 2px;
+    background: goldenrod;
+    height: 80px;
+    position: absolute;
+    margin-left: 80px;
+}
+.content1 {
+    margin-left: 50%;
+    margin-right: 10%;
+    margin-top: 7%;
+    font-size: 25px;
+}
+.footer {
+    height: auto;
+    background: white;
+    color: #003366;
+    background-attachment: fixed;
+    padding: 5%;
+    font-size: 20px;
+    line-height: 30px;
+}
+.footer span {
+    color: #8cc63f;
+}
+#diffs {
+    background: rebeccapurple;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    opacity: 1;
+}
+.alpha {
+    border: 1px solid #003366;
+    border-radius: 10px;
+    background: #8cc63f;
+    height: 20px;
+    width: 120px; 
+    padding: 10px;;
+    z-index:100;
+    display: block;
+    color: white;
+    opacity: 0.7;
+    top: 10%;
+}
+.alpha:hover {
+    opacity: 1;
+    transform: translateY(-5px);
+}
+.p1 {
+    display: inline-block;
+    margin-right: 50px;
+}
+@media only screen and (max-width: 650px), (max-height: 400px) {
+    .content1 {
+        font-size: 16px;
+    }
+    .first {
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .cont {
+        font-size: 20px;
+    }
+    .footer {
+        height: 100px;
+    }
+    .title {
+        font-size: 30px;
+    }
+}
+.nav {
+    padding: 0%;
+    color: white;
+    align-content: center;
+    height: 50px;
+}
+.nav-item {
+    color: ghostwhite;
+    align-content: center;
+    margin: 0;
+    padding: 2%;
+    float: left;
+    font-size: 20px;
+}
+.nav-item:hover {
+    background: white;
+    color: #003366;
+    width: auto;
+    cursor: pointer;
+}
+.resize {
+    font-size: 30px;
+}
+@media only screen and (max-width: 480px) {
+    .content1 {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .first h1 {
+        font-size: 30px;
+    }
+    .nav-item {
+        font-size: 17.78px;
+        padding: 2%;
+    }
+    .first {
+        background-position-y: 65%;
+    }
+}

@@ -1,0 +1,30 @@
+body{
+	margin: 0; /* Old Habits Die Hard */
+}
+.mainer{
+	width: 100vw;
+	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(assets/back.jpg);
+	min-height: 100vh;
+}
+.regarea{
+margin-left: 10%;
+margin-right: 10%;
+	background: white;
+	color: black;
+	border-radius: 1%;
+	min-height: 100vh;
+
+}
+.gfg{
+	margin-top: 1%;
+	height: 10%;
+	width: 10%;
+}
+h3{
+padding-top:2%;	
+}
+small{
+padding-top: 0;
+	color: #D3D3D3;
+	font-size: 0.4em;
+}
