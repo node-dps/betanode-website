@@ -1,21 +1,18 @@
 body {
     margin: 0;
     padding: 0;
-    background: #003366;
+    background: linear-gradient(45deg,#003366, #284360);
     overflow-x: hidden;
     font-family: "Abel";
 }
-a {
-    text-decoration: none;
-    cursor: pointer;
-}
+
 * {
-    transition: all ease 1.2s;
+    transition: all ease 0.2s;
 }
 .contain {
     height: 100vh;
     width: 100%;
-    background: url('alpha.jpg');
+    background: url('maclab.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -52,7 +49,7 @@ path {
 .text {
     color: #8cc63f;
     font-size: 100px;
-    font-family: Caviar dreams;
+    font-family: "Abel";
     font-weight: bold;
     position: absolute;
     top: 62%;
@@ -103,26 +100,6 @@ path {
         opacity: 1;
     }
 }
-.nav {
-    padding: 0%;
-    color: white;
-    align-content: center;
-    height: 83px;
-}
-.nav-item {
-    color: ghostwhite;
-    align-content: center;
-    margin: 0;
-    padding: 2%;
-    float: left;
-    font-size: 20px;
-}
-.nav-item:hover {
-    background: white;
-    color: #003366;
-    width: auto;
-    cursor: pointer;
-}
 @media only screen and (max-width: 800px) {
     .text {
         font-size: 30px;
@@ -137,34 +114,13 @@ path {
 
 .events {
     display: block;
-    padding: 20%;
+    padding: 15%;
     padding-top: 5%;
-    color: white;
-}
-.info {
+    color: #f2f2f2;
     height: auto;
-    width: 90%;
-    background: rgba(0,0,0,0.4);
-    border-bottom: #8cc63f solid 5px;
-    display: block;
-    margin-bottom: 7%;
-    padding: 4.5%;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.3);
-}
-.info:hover {
-    border: 1px solid #8cc63f;
-    border-bottom: 5px solid #8cc63f;
-    cursor: crosshair;
 }
 .first {
-    font-size: 4em;
-}
-.heading {
-    font-size: 2.5em;
-}
-.info p {
-    width: 60%;
-    font-size: 1.25em;
+    font-size: 3em;
 }
 @media only screen and (max-width: 480px) {
     .content1 {
@@ -174,17 +130,154 @@ path {
     .first h1 {
         font-size: 30px;
     }
-    .nav-item {
-        font-size: 16px;
-        padding: 2%;
-    }
     .text {
         font-size: 27px;
-        top: 67%;
+        top: 67.3%;
         left: 63%;
+        font-family: "Abel";
     }
     .line {
         height: 75px;
         top: 64.5%;
+        width: 1.2px;
     }
+}
+#active {
+    background: #f2f2f2;
+    color: #003366;
+}
+.footer {
+    height: auto;
+    background: #101010;
+    color: white;
+    padding: 5%;
+    font-size: 2em;
+    display: flex;
+}
+.accordion {
+    background-color: rgba(0,0,0,0.3);
+    cursor: pointer;
+    padding: 3%;
+    font-family: "Abel";
+    color: white;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 3em;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #fff;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 2%;
+    font-size: 1.5em;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background: rgba(0,0,0,0.4);
+    border-bottom: #8cc63f 2px solid;
+}
+@media only screen and (max-width: 600px) {
+
+    .accordian {
+        font-size: 2em;
+    }
+    .panel {
+        font-size: 1em;
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .accordion {
+        font-size: 1.7em;
+    }
+     #googleMap {
+        display: none;
+    }
+
+}
+
+  .register {
+    display: flex;
+    height: auto;
+    font-size: 1.3em;
+    width: 150px;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    padding: 3%;
+    text-align: center;
+    border: 0px;
+}
+.register:hover {
+    background: rgba(0,0,0,0.6);
+    border-bottom: 2px inset #8cc63f;
+    cursor: pointer;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background: linear-gradient(45deg,#003366, #284360);
+    color: white;
+    border: 1px solid #888;
+    width: 80%;
+    font-size: 20px;
+    padding: 20px;
+    margin: auto;
+}
+.modal-content p {
+    font-size: 2em;
+}
+
+/* The Close Button */
+.close {
+    color: #fefefe;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+}
+.green {
+    color: #8cc63f;
+}
+form {
+    margin: 0;
 }

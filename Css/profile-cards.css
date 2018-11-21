@@ -1,0 +1,117 @@
+.profile-container, .profile-container > *{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profile-container > *{
+    width: 100%;
+    max-width: 1000px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.students{
+    max-width: 760px;
+}
+
+hr.sep{
+    margin: 60px 0;
+    width: 80% !important;
+}
+hr.nimp{
+    margin: 0;
+    width: 40% !important;
+    border-color: transparent;
+}
+
+@media only screen and (max-width: 1000px){
+    hr.nimp{border-color: #ecf0f1;margin: 50px 0;}
+}
+
+[class*=badge]{
+    display: flex;
+    position: relative;
+    width: 220px;
+    height: 220px;
+    margin: 10px;
+    font-size: 22px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #ecf0f1;
+    background: rgba(0,0,0,0.3);
+    border-bottom: #ecf0f1 4px solid;
+    box-shadow: 
+    0 1px 3px rgba(0,0,0,0.3), 
+    0 1px 2px rgba(0,0,0,0.3);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.badge1{
+    border-color: #8cc63f;
+}
+.badge2{
+    border-color: goldenrod;
+}
+
+.dp{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+.dp.face-top{
+    background-position: top;
+}
+.dp.mag{
+    background-size: 150%;
+}
+
+.desig{
+    text-align: center;
+    font-size: 90%;
+}
+
+.visit{
+    display: block;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 0px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 0 0 2px 2px;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+
+    color: black;
+    background-color: #ecf0f1;
+
+    overflow: hidden;
+}
+
+.pres .visit, .sec .visit{
+    color: white;
+    background-color: #8cc63f;
+}
+
+[class*=badge]:hover .visit{
+    height: 30px;
+    animation: anim 0.2s ease-out;
+}
+
+@keyframes anim{
+    0%{
+        letter-spacing: 5px;
+    }
+    100%{
+        letter-spacing: 0px;
+    }
+}

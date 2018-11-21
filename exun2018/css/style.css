@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    color: #1f1f1f;
+    font-family: ps;
+    min-height: 1000px;
+    outline: none;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+@font-face{
+    font-family: ps;
+    src: url('../source/Product\ Sans\ Regular.ttf');
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-weight:400;
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 0 0 12px -1px transparent;
+    transition: all 0.2s, color 0s;
+    z-index: 3;
+}
+nav.main a.nav-item{
+    display: flex;
+    position: relative;
+    height: 100%;
+    margin: 0 5vmin;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s, left 0.8s ease-out, right 0.8s ease-out, opacity 0.8s ease-out;
+    opacity: 0;
+}
+
+.la{right: -300px; transition-delay: 0.2s}
+.lb{right: -100px;}
+.ra{left: -100px;}
+.rb{left: -300px; transition-delay: 0.2s}
+
+.lb, .ra{
+    font-size: 115%;
+}
+.la, .rb{
+    display: block;
+    margin-top: 3px !important;
+    margin-bottom: 3px !important;
+    font-size: 85%;
+}
+
+nav .favicon{
+    width: 78px;
+    height: 65px;
+    margin: 0 7vmin;
+    margin-top: 3px;
+}
